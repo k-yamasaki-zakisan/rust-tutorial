@@ -20,7 +20,7 @@ Rustup not available
 vscodeのrustupPathを修正する
 ```
 /Users/{user_name}/.cargo/bin/rustup
-``
+```
 
 https://takoyaking.hatenablog.com/entry/2020/01/05/180000
 
