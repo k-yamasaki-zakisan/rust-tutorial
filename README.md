@@ -13,5 +13,16 @@ source $HOME/.cargo/env
 
 https://qiita.com/yoshiyasu1111/items/0c3d08658560d4b91431
 
+## vscode
+vscodeでエラーで出ている
+Rustup not available
+
+vscodeのrustupPathを修正する
+```
+/Users/{user_name}/.cargo/bin/rustup
+``
+
+https://takoyaking.hatenablog.com/entry/2020/01/05/180000
+
 ## 公式
 https://www.rust-lang.org/ja/learn/get-started
