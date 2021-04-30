@@ -5,7 +5,6 @@ https://doc.rust-jp.rs/book-ja/ch01-01-installation.html
 * インストールコマンド
 ```
 $ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
-
 ```
 * pathを通す
 ```
