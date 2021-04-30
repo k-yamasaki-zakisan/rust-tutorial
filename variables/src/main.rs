@@ -47,9 +47,20 @@ fn main() {
     let element = a[index];
     println!("The value of element is: {}", element);
 
-    another_function();
+    another_function(5);
+
+    let tmp = plus_one(5);
+    println!("The value of x is: {}", tmp);
 }
 
-fn another_function() {
+fn another_function(x: i32) {
     println!("test function");
+
+    println!("The value of x is: {}", x);
+}
+
+fn plus_one(x: i32) -> i32 {
+    // リターンする時はセミコロン(;)を付けない
+    x + 1
+
 }
