@@ -1,16 +1,22 @@
 use std::io;
+use rand::Rng;
 
 fn main() {
     println!("Guess the number!");
+
+    // 乱数の作成
+    let secret_number = rand::thread_rng().gen_range(1, 101);
+
+    println!("The secret number is: {}", secret_number);
+
     println!("Please input your guess.");
 
-    // ユーザー標準入力
     let mut guess = String::new();
 
-    io::stdin().read_line(&mut guess)
-        // 行の読み込みに失敗しました
+    io::stdin()
+        .read_line(&mut guess)
+        // 例外処理
         .expect("Failed to read line");
-    
-    // 次のように予想しました: {user_input_word}
+
     println!("You guessed: {}", guess);
 }
